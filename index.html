@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">Thamiris Gonçalves — Front-End Developer</title>
+  <meta name="description" content="Portfolio of Thamiris Gonçalves, front-end developer: projects, skills and contact." data-i18n="meta.description" />
+  <link rel="canonical" href="https://your-domain.com" />
+  <meta property="og:title" content="Thamiris Gonçalves — Front-End Developer" data-i18n="meta.ogTitle" />
+  <meta property="og:description" content="Projects, skills and contact." data-i18n="meta.ogDescription" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content" data-i18n="a11y.skip">Skip to content</a>
+
+  <!-- Language banner (appears only on first visit if browser is PT) -->
+  <div id="lang-banner" class="lang-banner" role="region" aria-live="polite" hidden>
+    <p data-i18n="banner.text">We noticed your browser is in Portuguese. Switch to Portuguese (Brazil)?</p>
+    <div class="banner-actions">
+      <button id="banner-yes" class="btn btn-small" data-i18n="banner.yes">Yes, switch to PT-BR</button>
+      <button id="banner-no" class="btn btn-secondary btn-small" data-i18n="banner.no">Keep English</button>
+    </div>
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home" data-i18n-attr="aria-label:a11y.home">
+        <svg class="logo" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M7 13l3 3 7-7" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span>Thamiris.dev</span>
+      </a>
+
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select" data-i18n="a11y.chooseLang">Choose language</label>
+        <select id="lang-select" aria-label="Choose language" data-i18n-attr="aria-label:a11y.chooseLang">
+          <option value="en">English</option>
+          <option value="pt">Português (Brasil)</option>
+        </select>
+      </div>
+
+      <button class="nav-toggle" aria-controls="menu" aria-expanded="false">
+        <span class="sr-only" data-i18n="nav.open">Open menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="menu" class="site-nav" role="navigation" aria-label="Primary" data-i18n-attr="aria-label:nav.primary">
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a class="btn btn-small" href="https://your-portfolio-link" target="_blank" rel="noopener" data-i18n="nav.portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section id="top" class="section hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Thamiris Rafaela Gonçalves</h1>
+          <p class="subtitle" data-i18n="hero.subtitle">
+            Front-End Developer focused on responsive, accessible and high-performance interfaces. Wrapping up React and starting Back-End.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#projects" data-i18n="hero.cta1">See projects</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="hero.cta2">Contact me</a>
+          </div>
+          <ul class="meta">
+            <li>📍 London, United Kingdom</li>
+            <li>🌐 <a href="https://github.com/ThamirisRG" target="_blank" rel="noopener">GitHub</a></li>
+            <li>🔗<a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <!-- 🔽 FOTO DE PERFIL NO HERO
+             Troque o arquivo por: assets/profile.jpg (ou outro nome)
+             Dica: use uma imagem quadrada 800x800, fundo limpo -->
+        <div class="hero-visual">
+          <img src="./assets/image/perfil-image.jpg" alt="Professional headshot of Thamiris Gonçalves" loading="eager" width="420" height="420" style="border-radius:16px; object-fit:cover;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container narrow">
+        <h2 id="about-title" data-i18n="about.title">About me</h2>
+        <p data-i18n="about.p1">
+          I’m a front-end developer with a strong foundation in HTML, CSS and JavaScript. I’m finishing my React track and getting started with Back-End fundamentals. I love turning ideas into accessible, delightful digital products.
+        </p>
+        <p data-i18n="about.p2">
+          I also bring team leadership and customer-facing experience, which strengthens communication and collaboration in multicultural teams.
+        </p>
+
+        <!-- 🔽 FOTO DE PERFIL (OPCIONAL) NA SEÇÃO ABOUT COMO AVATAR
+             Se preferir avatar circular, descomente e estilize no CSS (.about-avatar) -->
+        <div class="about-avatar">
+          <img src="./assets/image/perfil-image.jpg" alt="Profile photo of Thamiris" width="220" height="220">
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" data-i18n="projects.title">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <article class="card will-reveal">
+            <img src="assets/thumb-1.svg" alt="" class="card-thumb" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="projects.items.0.title">Portfolio Website</h3>
+              <p data-i18n="projects.items.0.desc">Personal responsive site. </p>
+              <ul class="tech">
+                <li>HTML</li><li>CSS</li><li>JS</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-small" href="https://thamirisrg.github.io/portifolio/" target="_blank" rel="noopener" data-i18n="projects.demo">Demo</a>
+                <a class="btn-link" href="https://github.com/ThamirisRG/portifolio" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 (corrigido) -->
+          <article class="card will-reveal">
+            <img src="assets/thumb-2.svg" alt="" class="card-thumb" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="projects.items.1.title">Task Manager</h3>
+              <p data-i18n="projects.items.1.desc">To-Do app with LocalStorage and reusable components.</p>
+              <ul class="tech">
+                <li>HTML</li><li>CSS</li><li>JS</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-small" href="https://thamirisrg.github.io/todo_list/" target="_blank" rel="noopener" data-i18n="projects.demo">Demo</a>
+                <a class="btn-link" href="https://github.com/ThamirisRG/todo_list" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card will-reveal">
+            <img src="assets/thumb-3.svg" alt="" class="card-thumb" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="projects.items.2.title">Landing page One Piece</h3>
+              <p data-i18n="projects.items.2.desc">UI exploration with reusable components and interactive states.</p>
+              <ul class="tech">
+                <li>HTML</li><li>CSS</li><li>React*</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-small" href="https://thamirisrg.github.io/one-piece/" target="_blank" rel="noopener" data-i18n="projects.demo">Demo</a>
+                <a class="btn-link" href="https://github.com/ThamirisRG/one-piece" target="_blank" rel="noopener" data-i18n="projects.code">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" data-i18n="skills.title">Skills</h2>
+        <div class="skills">
+          <div class="skill will-reveal"><span>HTML</span><progress max="100" value="90">90%</progress></div>
+          <div class="skill will-reveal"><span>CSS</span><progress max="100" value="85">85%</progress></div>
+          <div class="skill will-reveal"><span>JavaScript</span><progress max="100" value="80">80%</progress></div>
+          <div class="skill will-reveal"><span>React</span><progress max="100" value="60">60%</progress></div>
+          <div class="skill will-reveal"><span data-i18n="skills.a11y">Accessibility</span><progress max="100" value="70">70%</progress></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+        <p data-i18n="contact.intro">Interested in a project or opportunity? Send me a message:</p>
+        <form class="contact-form" name="contact" novalidate>
+          <div class="form-grid">
+            <label>
+              <span data-i18n="contact.name">Name</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span data-i18n="contact.email">Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label class="full">
+              <span data-i18n="contact.message">Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+          </div>
+          <button class="btn" type="submit" data-i18n="contact.send">Send</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2025</span> Thamiris Gonçalves. Made with ♥ in London.</p>
+      <a href="#top" class="back-to-top" data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
